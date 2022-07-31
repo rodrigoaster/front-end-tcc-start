@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import { Sobre } from './pages/sobre/sobre';
+
 import { Cadastro } from './pages/cadastro/cadastro';
 
 import { Login } from './pages/login/login'
@@ -18,6 +20,7 @@ export const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path='/sobre' exact component={Sobre}/>
                 <Route path='/cadastro' exact component={Cadastro}/>
                 <Route path='/login' exact component={Login}/>
                 <Route path='/equipe' exact component={InfoEquipe}/>
