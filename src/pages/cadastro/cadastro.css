@@ -1,0 +1,12 @@
+.background-default{
+    width: 100%;
+    height: 105vh;
+    background-image: url('src/assets/img/cadastro/hidreletrica.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#card-form{
+    margin-top: 50px;
+}
