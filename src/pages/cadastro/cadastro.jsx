@@ -1,4 +1,5 @@
 import {Header} from '../../components/header/header'
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './cadastro.css'
 
@@ -15,7 +16,10 @@ export const Cadastro = () => {
                         <input type="password" placeholder="Senha" className="form-control form-control-lg" /> <br/>                   
                         <input type="password" placeholder="Confirmar Senha" className="form-control form-control-lg" /> <br/> <br/>                            
                         <a href="src/pages/telaCalculoConsumo.html" className="d-flex justify-content-center text-decoration-none"><button type="button" className="btn btn-outline-success">Cadastrar</button></a><br/>
-                        <p className="d-flex justify-content-center">Jápossui conta? <a href="/prototipo-tcc/src/pages/telaLogin.html"> Clique aqui!</a></p>
+                        <div className="d-flex justify-content-center">
+                            <p style={{marginRight: '3px'}}>Já possui conta?</p> 
+                            <Link className='primary ml-5' to='/login'>Clique Aqui!</Link>
+                        </div>
                     </form>                
                 </div>
             </main>
