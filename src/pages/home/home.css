@@ -1,0 +1,9 @@
+.background-default{
+    width: 100%;
+    height: 95vh;
+    background-image: url('src/assets/img/home/hidreletrica.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
