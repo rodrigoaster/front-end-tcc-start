@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import { CalculadoraConsumo } from './pages/calculo/calculo';
+
 import { Sobre } from './pages/sobre/sobre';
 
 import { Cadastro } from './pages/cadastro/cadastro';
@@ -20,6 +22,7 @@ export const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path='/calculo' exact component={CalculadoraConsumo}/>
                 <Route path='/sobre' exact component={Sobre}/>
                 <Route path='/cadastro' exact component={Cadastro}/>
                 <Route path='/login' exact component={Login}/>
