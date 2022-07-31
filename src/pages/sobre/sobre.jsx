@@ -14,7 +14,7 @@ export const Sobre = () => {
                 </div>
             </main>
 
-            <main className="container height-default p-5">
+            <main className="container height-default p-3">
             <h1 className="text-center">Você sabia que a conta de energia do Brasil <strong>é a segunda mais cara do mundo?</strong></h1><br/>
                 <div className="text-start">
                     
@@ -24,7 +24,7 @@ export const Sobre = () => {
                         <p className="extra-container-text-2">O custo da energia elétrica no Brasil aumentou 47% nos últimos cinco anos, o que contribuiu para que o País subisse no ranking mundial, sendo seguido por Turquia (3.º), Chile (4.º) e Portugal (5.º). Do outro lado do ranking, os cinco países que pagam mais barato pela energia elétrica são Noruega, Luxemburgo, Estados Unidos, Canadá e Suíça – primeiro ao quinto lugar, respectivamente.</p>
                     </div>
 
-                    <img src="src/assets/img/sobre/bgMetal.jpg" style={{width: '400px'}} />
+                    <img src="src/assets/img/sobre/dinheirolamp.png" style={{width: '600px'}} />
                 </div>
                 </div>
             </main>
@@ -44,18 +44,18 @@ export const Sobre = () => {
                         <button type="button" class="btn btn-success extra-m">Conhecer!</button>
                     </div>
 
-                    <img src="src/assets/img/sobre/bgMetal.jpg" style={{width: '400px'}} />
+                    <img className="rounded-circle" src="src/assets/img/sobre/calc.jpg" style={{width: '400px'}} />
                 </div>
             </main>
 
             <main className="container mt-5 text-start height-default p-5">
                 <h1 className="text-center">Seu próprio PERFIL</h1><br/>
                 <div className="container mt-5 d-flex justify-content-between" >
-                    <div>
+                    <div className="mt-5 pt-5">
                         <p className="extra-container-text-2">Tenha seu próprio PERFIL, o qual você poderá armazenar todos os <strong>registros</strong> que fizer utilizando nossa ferramente, caso queira consultar e alterar dados para <strong>novos registros!</strong></p>
-                        <img src="src/assets/img/sobre/bgMetal.jpg" style={{width: '400px'}} />
+                        <img src="src/assets/img/sobre/tableex.png" style={{width: '400px'}} />
                     </div>
-                    <img src="src/assets/img/sobre/bgMetal.jpg" style={{width: '400px'}} />
+                    <img src="src/assets/img/sobre/people.png" style={{width: '400px'}} />
                 </div>
             </main>
 
