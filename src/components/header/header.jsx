@@ -9,7 +9,7 @@ export const Header = () => {
                     
                 </a>
                 <ul className="nav justify-content-end nav-pills">
-                                     
+
                 </ul>
             </div>
         </nav>
