@@ -1,3 +1,7 @@
+section {
+    background-color: rgb(242, 242, 242);
+}
+
 .extra-form-container {
     background-color: white;
     box-shadow: 1px 1px 6px #00000065;
@@ -8,16 +12,22 @@
 }
 
 .extra-form-container2 {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     max-width: 400px;
     text-align: center;
 }
 
-.extra-m {
-    margin: 70px 0;
-}
 
 .extra-m-button {
     margin: 25px 0px;
+}
+
+.extra-padd {
+    padding-right: 120px;
+    padding-top: 50px;
+}
+
+.extra-bg-light {
+    background-color: #fff;
 }

@@ -6,7 +6,7 @@ export const CalculadoraConsumo = () => {
     return (
         <section>
             <Header/>
-            <main className="extra-m d-flex">
+            <main className="d-flex p5 justify-content-between">
                 <form className="extra-form-container">
                     <div><br/>
                         <h1>Calculadora Consumo</h1><br/>
@@ -14,7 +14,6 @@ export const CalculadoraConsumo = () => {
                     </div>
                         <div className="extra-form-container2">
                             <select class="form-select" aria-label="Default select example">
-                            
                                 <option selected>Ventilador</option>
                                 <option value="1">Geladeira</option>
                                 <option value="2">Televisão</option>
@@ -37,8 +36,43 @@ export const CalculadoraConsumo = () => {
                                 <input type="text" class="form-control" placeholder="Quantidade/Dias"/>
                             </div>
                         </div>
-                        <div className="extra-m-button"><button className="btn btn-primary extra-mt-5">Calcular</button></div>
+                        <div className="extra-m-button">
+                            <button className="btn btn-primary extra-mt-5">Calcular</button>
+                        </div>
                 </form>
+
+                <div className="extra-padd">
+                <table class="table">
+                    <thead className="table-light">
+                        <tr>
+                        <th scope="col">N do registro</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Consumo</th>
+                        <th scope="col">Valor em R$</th>
+                        </tr>
+                    </thead>
+                    <tbody className="extra-bg-light">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Rodrigo Santana Leão</td>
+                            <td>200W</td>
+                            <td>R$100</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                            <td>Rodrigo Santana Leão</td>
+                            <td>90W</td>
+                            <td>R$40</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Rodrigo Santana Leão</td>
+                            <td>50W</td>
+                            <td>R$20</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
             </main>
     </section>
     )
