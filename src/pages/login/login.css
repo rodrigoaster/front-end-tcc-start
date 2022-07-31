@@ -1,0 +1,12 @@
+.background-default{
+    width: 100%;
+    height: 95vh;
+    background-image: url('src/assets/img/login/hidreletrica.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    margin-top: 50px;
+}
