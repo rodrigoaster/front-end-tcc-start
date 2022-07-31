@@ -10,7 +10,7 @@ export const Header = () => {
                 </a>
                 <ul className="nav justify-content-end nav-pills">
                     <li className="nav-item">
-                        <Link className="nav-link" to='/'>HOME</Link>
+                        <Link className="nav-link active" to='/'>HOME</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to='/sobre'>SOBRE</Link>
