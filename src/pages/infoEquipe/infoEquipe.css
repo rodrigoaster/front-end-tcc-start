@@ -1,0 +1,31 @@
+.background-equipe{
+    background-color: mediumaquamarine;
+    height: 100vh;
+}
+
+.foto{
+    border-radius: 50%;
+    box-shadow: 0px 7px 20px 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+}
+
+.grid-item {
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
