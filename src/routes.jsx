@@ -5,7 +5,7 @@ export const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/esqueci-senha' exact component={newSenha}/>
+                <Route path='/esqueciSenha' exact component={newSenha}/>
             </Switch>
         </BrowserRouter>
     )
