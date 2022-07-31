@@ -10,3 +10,11 @@
 form{
     margin-top: 50px;
 }
+
+.extra-mr-5 {
+    margin-right: 5px;
+}
+
+.text-deco-none {
+    text-decoration: none;
+}

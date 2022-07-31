@@ -1,6 +1,7 @@
 import { Header } from "../../components/header/header"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   return(
@@ -12,8 +13,10 @@ export const Login = () => {
           <input type="text" placeholder="Nome Completo" className="form-control form-control-lg"/><br />
           <input type="password" placeholder="Senha" className="form-control form-control-lg"/> <br /> <br />
           <a href="#" className="d-flex justify-content-center text-decoration-none"><button className="btn btn-outline-success">Entrar</button></a><br />
-          <p className="d-flex justify-content-center">Não tem conta? <a href="cadastro"> Clique aqui!</a></p>
-          <p className="d-flex justify-content-center"><a href="redefinir-senha"> Equeci minha senha</a></p>          
+          <div className="d-flex justify-content-center">
+            <p className="extra-mr-5">Não possui conta?</p> 
+            <Link className="text-deco-none " to='/cadastro'>Cadastre-se</Link>  
+          </div>          
         </form>
       </div> 
     </div>
