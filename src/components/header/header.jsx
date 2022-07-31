@@ -23,8 +23,10 @@ export const Header = () => {
                         <Link className="nav-link" to='/calculo'>CÁLCULO</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to='/equipe'>CONTATO</Link>
+
+                        <Link className="nav-link active" to='/equipe'>CONTATO</Link>
                     </li>                   
+
 
                 </ul>
             </div>
