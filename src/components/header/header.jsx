@@ -9,7 +9,6 @@ export const Header = () => {
                     
                 </a>
                 <ul className="nav justify-content-end nav-pills">
-                
                     <li className="nav-item">
                         <Link className="nav-link" to='/'>HOME</Link>
                     </li>
@@ -23,10 +22,10 @@ export const Header = () => {
                         <Link className="nav-link" to='/calculo'>CÁLCULO</Link>
                     </li>
                     <li className="nav-item">
-
+                        <Link className="nav-link" to='/equipe'>CONTATO</Link>
+                    </li>                
                         <Link className="nav-link active" to='/equipe'>CONTATO</Link>
                     </li>                   
-
 
                 </ul>
             </div>
