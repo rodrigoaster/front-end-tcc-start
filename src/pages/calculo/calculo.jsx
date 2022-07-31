@@ -6,9 +6,7 @@ export const CalculadoraConsumo = () => {
     return (
         <section>
             <Header/>
-            
             <main className="extra-m d-flex">
-                
                 <form className="extra-form-container">
                     <div><br/>
                         <h1>Calculadora Consumo</h1><br/>
@@ -39,7 +37,6 @@ export const CalculadoraConsumo = () => {
                                 <input type="text" class="form-control" placeholder="Quantidade/Dias"/>
                             </div>
                         </div>
-
                         <div className="extra-m-button"><button className="btn btn-primary extra-mt-5">Calcular</button></div>
                 </form>
             </main>
