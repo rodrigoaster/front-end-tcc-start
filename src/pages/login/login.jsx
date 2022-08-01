@@ -11,7 +11,7 @@ export const Login = () => {
         <Header/>
         <div className="background-default pt-5">
         <form className="col-lg-6 col-md-8 mx-auto bg-light p-4 rounded div-position" action='#' method='POST'>
-          <h1 className="text-center">Login</h1> <br /> <br />
+          <h1 className="text-center">LOGIN</h1> <br /> <br />
           <input type="email" placeholder="Email" className="form-control form-control-lg"/><br />
           <input type="password" placeholder="Senha" className="form-control form-control-lg"/> <br /> <br />
           <a href="#" className="d-flex justify-content-center text-decoration-none"><button className="btn btn-outline-success">Entrar</button></a><br />
