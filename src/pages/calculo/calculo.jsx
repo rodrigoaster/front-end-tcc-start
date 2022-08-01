@@ -24,16 +24,16 @@ export const CalculadoraConsumo = () => {
                             </select>
                             <br/>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Quantidade"/>
+                                <input type="number" class="form-control" placeholder="Quantidade"/>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Potência"/>
+                                <input type="number" class="form-control" placeholder="Potência"/>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Quantidade/Horas"/>
+                                <input type="number" class="form-control" placeholder="Quantidade/Horas"/>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Quantidade/Dias"/>
+                                <input type="number" class="form-control" placeholder="Quantidade/Dias"/>
                             </div>
                         </div>
                         <div className="extra-m-button">

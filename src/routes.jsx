@@ -16,8 +16,6 @@ import { Home } from './pages/home/home';
 
 import { Informacoes } from './pages/informacoes/informacoes';
 
-
-
 export const Routes = () => {
     return (
         <BrowserRouter>
