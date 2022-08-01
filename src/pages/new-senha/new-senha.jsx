@@ -1,5 +1,6 @@
 import {Header} from "../../components/header/header";
 import { Link } from "react-router-dom";
+import { Footer } from "../../components/footer/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './new-senha.css';
 

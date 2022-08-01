@@ -20,12 +20,12 @@ export const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path='/' exact component={Home}/>
                 <Route path='/calculo' exact component={CalculadoraConsumo}/>
                 <Route path='/sobre' exact component={Sobre}/>
                 <Route path='/cadastro' exact component={Cadastro}/>
                 <Route path='/login' exact component={Login}/>
                 <Route path='/equipe' exact component={InfoEquipe}/>
-                <Route path='/' exact component={Home}/>
                 <Route path='/esqueciSenha' exact component={newSenha}/>
                 <Route path='/informacoes' exect component={Informacoes}/>
             </Switch>
