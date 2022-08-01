@@ -6,7 +6,7 @@ export const CalculadoraConsumo = () => {
     return (
         <section>
             <Header/>
-            <main className="d-flex p5 justify-content-between">
+            <main id="bg1" className="d-flex justify-content-between">
                 <form className="extra-form-container">
                     <div><br/>
                         <h1>Calculadora Consumo</h1><br/>
@@ -41,12 +41,12 @@ export const CalculadoraConsumo = () => {
                         </div>
                 </form>
 
-                <div className="extra-padd">
+                <div id="bg2" className="extra-padd">
                 <table class="table">
                     <thead className="table-light">
                         <tr>
                         <th scope="col">N do registro</th>
-                        <th scope="col">Nome</th>
+                        <th scope="col">Nome Completo</th>
                         <th scope="col">Consumo</th>
                         <th scope="col">Valor em R$</th>
                         </tr>

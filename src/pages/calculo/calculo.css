@@ -1,5 +1,6 @@
 section {
     background-color: rgb(242, 242, 242);
+    height: 140vh;
 }
 
 .extra-form-container {
@@ -30,4 +31,44 @@ section {
 
 .extra-bg-light {
     background-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    section {
+        height: auto;
+    } 
+    
+    #bg1 {
+        display: block !important;
+        height: auto;
+        
+    }
+
+    #bg2 {
+        padding: 50px 0;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 601px) {
+    section {
+        height: auto;
+    } 
+    
+    #bg1 {
+        display: block !important;
+        height: auto;
+        
+    }
+
+    #bg2 {
+        padding: 50px 0;
+    }
+
+    .extra-form-container {
+        margin-left: 0;
+    }
 }
