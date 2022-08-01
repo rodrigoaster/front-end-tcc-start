@@ -1,5 +1,6 @@
 import {Header} from '../../components/header/header'
 import { Link } from 'react-router-dom';
+import { Footer } from '../../components/footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './cadastro.css'
 
@@ -23,6 +24,7 @@ export const Cadastro = () => {
                     </form>                
                 </div>
             </main>
+            <Footer/>
         </div>
     )
 }

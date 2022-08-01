@@ -1,7 +1,9 @@
 import { Header } from "../../components/header/header"
+import { Link } from "react-router-dom";
+import { Footer } from "../../components/footer/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
-import { Link } from "react-router-dom";
+
 
 export const Login = () => {
   return(
@@ -19,6 +21,7 @@ export const Login = () => {
           </div>          
         </form>
       </div> 
+      <Footer/>
     </div>
   )
     

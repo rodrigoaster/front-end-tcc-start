@@ -19,6 +19,7 @@ export const newSenha = () =>{
                     </div>
                 </form>
             </div> 
+            <Footer/>
         </div>
     )
 }

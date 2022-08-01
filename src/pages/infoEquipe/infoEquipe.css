@@ -1,6 +1,6 @@
 .background-equipe{
     background-color: mediumaquamarine;
-    height: 100vh;
+    height: 80%;
 }
 
 .foto{
@@ -12,8 +12,8 @@
 
 .grid-container {
     display: grid;
+    margin-top: 30px;
     grid-template-columns: auto auto auto;
-    padding: 0px;
 }
 
 .grid-item {

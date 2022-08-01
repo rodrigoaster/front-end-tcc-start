@@ -12,7 +12,6 @@ export const Sobre = () => {
             <main id="bg1" className="container height-default ">
                 <h1 className="text-center mt-5">Você sabia que a conta de energia do Brasil <strong>é a segunda mais cara do mundo?</strong></h1><br/>
                 <div className="text-start">
-                    
                     <div className="container mt-5 d-flex justify-content-between padd-y" >
                         <div>
                             <p className="extra-container-text-2 mt-5 pt-2">O Brasil tem a segunda conta de energia elétrica mais cara do mundo, de acordo com um levantamento feito pela plataforma de cupons de descontos CupomValido.com.br, com dados da Associação dos Grandes Consumidores Industriais de Energia e de Consumidores Livres (Abrace). Segundo a pesquisa, o País fica atrás somente da Colômbia no custo da eletricidade.</p><br/>
@@ -27,7 +26,7 @@ export const Sobre = () => {
             <main id="bg2" className="container text-center height-default d-flex align-items-center extra-p-top">
                 <div className="container extra-container-text">
                     <h1>O que é o BF ENERGY?</h1><br/>
-                    <p>O projeto BF ENERGY nasceu com o objetivo de ajudar pessoas a diminuirem uma preocupação que normalmente afeta boa parte dos brasileiros, em especial aqueles que vivem no Nordeste,  <strong>CONTA DE ENERGIA.</strong> Buscamos fazer você ler, entender e como economizar mais nos gastos causados por essa finança:</p>
+                    <p>Quem nunca se preocupou com quando chegou a conta de energia em casa, quantos planos foram deixados de lado para dar prioridade a ela foi pensando nisso que o BF ENERGY. Esse projeto veio com o objetivo de ajudar pessoas a diminuirem uma preocupação que normalmente afeta boa parte dos brasileiros, em especial aqueles que vivem no Nordeste,  <strong>CONTA DE ENERGIA.</strong> Buscamos fazer você ler, entender e como economizar mais nos gastos causados por essa finança:</p>
                 </div>
             </main>
 
@@ -62,7 +61,5 @@ export const Sobre = () => {
             </main>
             <Footer/>
         </section>
-
-        
     )
 }

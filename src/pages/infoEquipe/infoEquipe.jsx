@@ -1,4 +1,5 @@
 import { Header } from "../../components/header/header";
+import { Footer } from "../../components/footer/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './infoEquipe.css'
 
@@ -8,7 +9,7 @@ export const InfoEquipe = () => {
             <Header/>
 
             <main className="background-equipe pt-5">
-                <div id='card' className="col-lg-6 col-md-8 mx-auto bg-light p-4 rounded div-master">       
+                <div id='card' className="col-lg-6 col-md-8 mx-auto bg-light p-4 rounded">       
                 <h1 className="text-center">Equipe Sirius Development</h1><br />
                     <div className="grid-container">
                     <div id="allan" className="grid-item">
@@ -33,6 +34,7 @@ export const InfoEquipe = () => {
                 </div>        
                 </div>            
              </main>
+             <Footer/>
         </section>
     )
     
