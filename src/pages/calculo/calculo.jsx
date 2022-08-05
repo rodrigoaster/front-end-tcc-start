@@ -7,11 +7,11 @@ export const CalculadoraConsumo = () => {
         <section>
             <Header/>
             <main className="extra-m d-flex">
-                <form className="extra-form-container">
-                    <div><br/>
-                        <h1>Calculadora Consumo</h1><br/>
-                        <p>Selecione o eletrodoméstico:</p>
-                    </div>
+                
+                <div className="extra-form-container">
+                    <h1>Calculadora Consumo</h1><br/>
+                    <p>Selecione o eletrodoméstico:</p>
+                    <form>
                         <div className="extra-form-container2">
                             <select class="form-select" aria-label="Default select example">
                             
@@ -38,7 +38,9 @@ export const CalculadoraConsumo = () => {
                             </div>
                         </div>
                         <div className="extra-m-button"><button className="btn btn-primary extra-mt-5">Calcular</button></div>
-                </form>
+                    </form>
+                </div> 
+                        
             </main>
     </section>
     )
