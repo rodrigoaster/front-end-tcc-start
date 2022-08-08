@@ -1,6 +1,10 @@
 .background-equipe{
     background-color: mediumaquamarine;
-    height: 100vh;
+    height: 87vh;
+}
+
+#card{
+    margin-top: 25px;
 }
 
 .foto{
