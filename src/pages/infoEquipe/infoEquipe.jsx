@@ -10,7 +10,7 @@ export const InfoEquipe = () => {
 
             <main className="background-equipe pt-5">
                 <div id='card' className="col-lg-6 col-md-8 mx-auto bg-light p-4 rounded">       
-                <h1 className="text-center">Equipe Sirius Development</h1><br />
+                <h1 className="text-center">Sirius Development</h1><br />
                     <div className="grid-container">
                     <div id="allan" className="grid-item">
                         <h2>Allan Souza</h2>
