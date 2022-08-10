@@ -1,0 +1,13 @@
+.nav{
+    justify-content: center;
+}
+
+.navbar-collapse > .navbar-nav{
+    align-items: center;   
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+}
