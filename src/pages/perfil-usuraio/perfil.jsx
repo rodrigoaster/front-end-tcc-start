@@ -1,4 +1,5 @@
 import { Header } from "../../components/header/header"
+import { Footer } from "../../components/footer/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './perfil.css'
 
@@ -51,7 +52,8 @@ export const Perfil = () => {
                 <a href="#" className="d-flex justify-content-center text-decoration-none"><button className="btn btn-secondary">Adicionar</button></a> <br />
             </div>
         </section>
-      </div> 
+      </div>
+    <Footer/>
     </div>
   )
 }
