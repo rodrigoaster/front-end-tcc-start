@@ -7,7 +7,7 @@ export const Header = () => {
       
         <div className="container-fluid">
             <a  href="perfil">
-                <img src="src/assets/img/logo/logo.png" alt="" width="90" height="90" className="d-inline-block align-text-top"/>              
+                <img src="src/assets/img/logo/New-logo.png" alt="" width="90" height="90" className="d-inline-block align-text-top"/>              
             </a>
   
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
