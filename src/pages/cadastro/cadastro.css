@@ -15,3 +15,12 @@ a {
 .padd-all {
     padding: 180px;
 }
+
+.form-error {
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 5px 9px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
