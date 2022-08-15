@@ -28,7 +28,7 @@ export const Perfil = () => {
   const [ update, setUpdate ] = useState(false);
 
   useEffect(() => {
-    api.get('/user/checkUser', {
+    api.get('/user', {
       headers: {
         Authorization: `Bearer ${JSON.parse(token)}`
       }
