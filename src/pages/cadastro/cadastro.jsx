@@ -4,13 +4,14 @@ import { Footer } from '../../components/footer/footer';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { toast, ToastContainer } from 'react-toastify';
 import { Context } from '../../context/auth/UserContext';
+import { useContext } from 'react';
+
 
 import * as yup from 'yup';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './cadastro.css'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { useContext } from 'react';
 
 
 export const Cadastro = () => {
