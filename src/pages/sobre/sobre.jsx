@@ -54,9 +54,10 @@ export const Sobre = () => {
                 <div className="container mt-5 d-flex justify-content-between" >
                     <div className="mt-5 pt-5">
                         <p className="extra-container-text-2">Tenha seu próprio PERFIL, o qual você poderá armazenar todos os <strong>registros</strong> que fizer utilizando nossa ferramente, caso queira consultar e alterar dados para <strong>novos registros!</strong></p>
-                        <img src="src/assets/img/sobre/tableex.png" style={{width: '400px'}} />
+                        <Link to="/cadastro" className="btn btn-success mt-5">Cadastrar-se</Link>
                     </div>
-                    <img id="img2-bg4" src="src/assets/img/sobre/people.png" style={{width: '400px', height:'437px'}} />
+                    <img src="src/assets/img/sobre/tableex.png" style={{width: '600px'}} />
+                    {/* <img id="img2-bg4" src="src/assets/img/sobre/people.png" style={{width: '400px', height:'437px'}} /> */}
                 </div>
             </main>
             <Footer/>
