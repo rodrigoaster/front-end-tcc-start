@@ -32,7 +32,8 @@ export const Cadastro = () => {
 
 
     const handleClickRegister = async (user) => {
-        createUser(user)
+        // createUser(user)
+        console.log(user)
     }
 
 

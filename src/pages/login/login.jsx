@@ -30,7 +30,7 @@ export const Login = () => {
   return(
     <div>
         <Header/>
-        <div className="bg-def extra-pt padd-all ">
+        <div className="bg-def extra-pt">
           <div class='container bg-light p-5 w-50 rounded mb-5'>
             <h1 className="text-center">LOGIN</h1>
               <Formik 

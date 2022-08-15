@@ -43,7 +43,7 @@ export const Perfil = () => {
   }
 
   const handleChangeValues = (values) => {
-    console.log('whatever')
+    console.log(values)
   }
 
     

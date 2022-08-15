@@ -1,6 +1,7 @@
 .bg-def{
     width: 100%;
     height: auto;
+    padding: 220px 0px;
     background-image: url('src/assets/img/login/hidreletrica.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -18,11 +19,6 @@ form{
 .text-deco-none {
     text-decoration: none;
 }
-
-.padd-all {
-    padding: 60px 0;
-}
-
 
 
 @media screen and (max-width: 605px) {

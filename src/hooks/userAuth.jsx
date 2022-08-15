@@ -76,5 +76,21 @@ export const useAuth = () => {
         toast.success("Usuário deslogado com sucesso!")
     }
 
-    return {authenticated, createUser, loginUser, logoutUser}
+    const updateUser = async (values) => {
+        await api.patch("/user/create", 
+        {
+            user_Name: values.name,
+            user_CPF: values.cpf,
+            user_Email: values.email
+        })
+        .then((res) => {
+            toast.success(res.data.message)
+            return
+        }).catch((err) => {
+            toast.error(err.response.data.message)
+            return
+        })
+    }
+
+    return {authenticated, createUser, loginUser, logoutUser, updateUser}
 }
