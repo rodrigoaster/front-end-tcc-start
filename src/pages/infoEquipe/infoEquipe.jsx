@@ -8,7 +8,7 @@ export const InfoEquipe = () => {
         <section>
             <Header/>
 
-            <main className="background-equipe pt-5">
+            <main className="bg pt-5">
                 <div id='card' className="col-lg-8 col-md-8 mx-auto bg-light p-4 rounded">       
                 <h1 className="text-center">Sirius Development</h1><br />
                     <div className="grid-container">
