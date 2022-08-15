@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import api from "../../helpers/api";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './userInfo.css'
+
 const validationUpdate = yup.object().shape({
   name: yup.string().min(16, 'Este campo deve conter no mínimo 16 caractéres').required('Este campo é obrigatório!'),
 
@@ -16,8 +19,7 @@ const validationUpdate = yup.object().shape({
 })
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './userInfos.css'
+
 
 export const Perfil = () => {
 

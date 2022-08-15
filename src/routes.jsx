@@ -8,7 +8,7 @@ import { newSenha } from './pages/new-senha/new-senha';
 import { Home } from './pages/home/home';
 import { Informacoes } from './pages/informacoes/informacoes';
 import { UserProvider } from './context/auth/UserContext';
-import { Perfil } from './pages/userInfos/userInfos'
+import { Perfil } from './pages/userInfo/userInfo'
 
 export const Routes = () => {
     
