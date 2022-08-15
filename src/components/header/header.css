@@ -2,6 +2,17 @@
     justify-content: center;
 }
 
+
+
+.hoverNav:hover {
+    background-color: #0d6efd;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+.hoverNavItem:hover {
+    color: #ffffff !important;
+}
+
 .navbar-collapse > .navbar-nav{
     align-items: center;   
 }
