@@ -14,7 +14,7 @@ export const Home = () => {
                         <h1 className="text-center">Nos comprometemos com <p className="text-center text-success">SUA ECONOMIA</p></h1> <br />
                         <p className="lead text-muted">Uma nova forma de você ter maior controle de uma das finanças mais problemáticas da sociedade: Conta de energia. Nosso objetivo é lhe auxiliar, para que você possa ter mais tempo para fazer o que gosta! Bem vindo ao <strong>BF ENERGY!</strong></p> <br />
                         <div className='d-flex justify-content-center'>
-                            <a><Link className='btn btn-primary'to='/sobre'>Veja mais!</Link></a>
+                            <a><Link className='btn btn-primary p-3 fs-5'to='/sobre'>Veja mais!</Link></a>
                         </div>
                     </div>
                 </div>

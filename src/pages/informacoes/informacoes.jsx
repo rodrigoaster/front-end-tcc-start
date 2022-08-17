@@ -46,14 +46,14 @@ export const Informacoes = () => {
                     <div class="col">
                     <div class="card shadow-sm">
                         
-                        <img height={"361px"} src="src/assets/img/informacoes/14-calculadora-800x533.jpg" alt="" />
+                        <img height={"370px"} src="src/assets/img/informacoes/14-calculadora-800x533.jpg" alt="" />
 
                         <div class="card-body">
                         <h3>ICMS, PIS E COFINS.</h3>
-                        <p>Tenha uma noção melhor do quanto os impostos mudam sua conta de energia!</p>
+                        <p>Tenha uma noção melhor do quanto os impostos mudam sua conta de energia, quais são esses impostos, quais você pode evitar de pagar...</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-outline-warning">Descubra agora!</button>
+                                <button type="button" class="btn btn-outline-warning mt-4">Descubra agora!</button>
                             </div>
                         </div>
                         </div>
@@ -77,7 +77,7 @@ export const Informacoes = () => {
                     </div>
                     <div class="col">
                     <div class="card shadow-sm">
-                        <img height={"269px"} src="src/assets/img/informacoes/eletros.jpg" alt="" /> 
+                        <img height={"325px"} src="src/assets/img/informacoes/eletros.jpg" alt="" /> 
 
                         <div class="card-body">
                         <h3>O que significa a potência dos equipamentos?</h3>

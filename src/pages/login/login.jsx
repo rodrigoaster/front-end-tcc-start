@@ -30,8 +30,8 @@ export const Login = () => {
   return(
     <div>
         <Header/>
-        <div className="bg-def extra-pt">
-          <div class='container bg-light p-5 w-50 rounded mb-5'>
+        <div className="bg-def d-flex justify-content-around extra-pt">
+          <div class='container bg-light p-5 w-25 rounded mb-5 shadow p-3 mb-5 bg-body rounded'>
             <h1 className="text-center">LOGIN</h1>
               <Formik 
               initialValues={{}}
@@ -77,6 +77,10 @@ export const Login = () => {
             <div className="d-flex justify-content-center mt-2">
                 <Link className="text-deco-none btn btn-danger" to='/esqueciSenha'>Esqueci minha senha</Link>  
             </div> 
+          </div>
+
+          <div class="img-logo">
+            <img src="src/assets/img/logo/New-logo.png" alt="" width="500" height="500" className="d-inline-block align-text-top"/>
           </div>
         </div> 
         <ToastContainer/>

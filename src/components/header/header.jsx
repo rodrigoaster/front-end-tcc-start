@@ -1,18 +1,32 @@
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import { Context } from "../../context/auth/UserContext";
+import api from "../../helpers/api";
 
 import './header.css';
 
 export const Header = () => {
 
     const { authenticated, logoutUser } = useContext(Context);
+    const [ user, setUser ] = useState({})
+    const [ token ] = useState(localStorage.getItem('token') || '')
+
+    useEffect(() => {
+        api.get('/user', {
+        headers: {
+            Authorization: `Bearer ${JSON.parse(token)}`
+        }
+        }).then((res)=> {
+        setUser(res.data)
+        });
+
+    }, [token])
 
     return (
         <nav className="navbar px-5 bg-light navbar-expand-lg">
             <div className="container-fluid">
-                <a  href="perfil">
-                    <img src="src/assets/img/logo/New-logo.png" alt="" width="90" height="90" className="d-inline-block align-text-top"/>
+                <a  href="/">
+                    <img src="src/assets/img/logo/New-logo.png" alt="" width="130" height="115" className="d-inline-block align-text-top"/>
                 </a>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
@@ -20,32 +34,31 @@ export const Header = () => {
                 </button>
 
                 <div id="navbarNav" className="collapse navbar-collapse nav nav-pills">
-                <ul className="nav justify-content-end nav-pills">
+                <ul className="nav nav-font-size justify-content-end nav-pills">
                     <li className="nav-item hoverNav">
                         <Link className="nav-link hoverNavItem" to='/'>Home</Link>
                     </li>
                     <li className="nav-item hoverNav">
-                        <Link className="nav-link hoverNavItem" to='/sobre'>Sobre</Link>
+                        <Link className="nav-link hoverNavItem" to='/sobre'>Sobre o BF</Link>
                     </li>
-                    <li className="nav-item hoverNav">
-                        <Link className="nav-link hoverNavItem" to='/informacoes'>Informações</Link>
-                    </li>
-                    <li className="nav-item hoverNav">
-                        <Link className="nav-link hoverNavItem" to='/equipe'>Contato</Link>
-                    </li>  
                     {
                         authenticated ?
                         (
                         <>
-                            <li className="nav-item hoverNav">
-                                <Link className="nav-link hoverNavItem" to='/calculo'>Cálculo</Link>
-                            </li>   
-                            <li className="nav-item hoverNav">
-                                <Link className="nav-link hoverNavItem" to='/user'>Meu Perfil</Link>
-                            </li>
-                            <li className="nav-item hoverNav"> 
-                                <Link onClick={logoutUser} className="nav-link hoverNavItem" to='/'>Sair</Link>
-                            </li>
+                            <div className="d-flex">
+                                <li className="nav-item hoverNav">
+                                    <Link className="nav-link hoverNavItem" to='/informacoes'>Informações</Link>
+                                </li>
+                                <li className="nav-item hoverNav">
+                                    <Link className="nav-link hoverNavItem" to='/calculo'>Cálculo</Link>
+                                </li>
+                                <li className="nav-item hoverNav">
+                                    <Link className="nav-link hoverNavItem" to='/user'>Olá, {user.user_Name}</Link>
+                                </li>
+                                <li className="nav-item hoverNav">
+                                    <Link onClick={logoutUser} className="nav-link hoverNavItem" to='/'>Sair</Link>
+                                </li>
+                            </div>
                         </>
                         ) 
                         : 

@@ -2,7 +2,9 @@
     justify-content: center;
 }
 
-
+.nav-font-size {
+    font-size: 18px;
+}
 
 .hoverNav:hover {
     background-color: #0d6efd;

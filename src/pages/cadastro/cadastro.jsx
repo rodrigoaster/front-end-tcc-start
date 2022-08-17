@@ -32,8 +32,7 @@ export const Cadastro = () => {
 
 
     const handleClickRegister = async (user) => {
-        // createUser(user)
-        console.log(user)
+        createUser(user)
     }
 
 
@@ -41,8 +40,8 @@ export const Cadastro = () => {
         <div>
             <Header/>
             <main class="bg-def pt-5 pb-5">
-                <div class="extra-pt ">
-                        <div class='container bg-light p-5 w-50 rounded mb-5'>
+                <div class="extra-pt d-flex justify-content-around">
+                        <div class='container shadow p-3 mb-5 bg-body rounded p-5 w-25 rounded mb-5'>
                         <h1 class="text-center">Cadastro</h1>
                             <Formik 
                             initialValues={{}}
@@ -91,6 +90,10 @@ export const Cadastro = () => {
                         <div class="d-flex justify-content-center mt-2">
                             <Link class="text-deco-none btn btn-danger" to='/esqueciSenha'>Esqueci minha senha</Link>  
                         </div> 
+                    </div>
+
+                    <div class='img-logo'>
+                        <img src="src/assets/img/logo/New-logo.png" alt="" width="500" height="500" className="d-inline-block align-text-top"/>
                     </div>
                 </div> 
             </main>

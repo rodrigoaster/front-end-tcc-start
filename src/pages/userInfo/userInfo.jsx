@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Header } from "../../components/header/header"
 import { Footer } from "../../components/footer/footer";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -42,8 +42,22 @@ export const Perfil = () => {
     setUpdate(true)
   }
 
-  const handleChangeValues = (values) => {
-    console.log(values)
+  const handleChangeValues = async (values) => {
+    await api.patch(`/user/edit/${values.user_Id}`, 
+        {
+            user_Name: values.name,
+            user_CPF: values.cpf,
+            user_Email: values.email,
+            headers: {
+              Authorization: `${JSON.parse(token)}`
+            }
+        }).then((res) => {
+            toast.success(res.data.message)
+            return
+        }).catch((err) => {
+            toast.error(err.res.data.message)
+            return
+        })
   }
 
     
@@ -63,19 +77,19 @@ export const Perfil = () => {
               <Formik initialValues={{}} onSubmit={handleChangeValues} validationSchema={validationUpdate}>
                 <Form>
                     <div class="mb-3">
-                        <Field name="name" class="form-control" placeholder="Nome completo" value={user.user_Name || ''}/>
+                        <Field name="name" class="form-control" placeholder="Nome completo"/>
 
                         <ErrorMessage component="span" name="name" class="form-error"/>
                     </div>
 
                     <div class="mb-3">
-                        <Field name="cpf" class="form-control" placeholder="CPF" value={user.user_CPF|| ''}/>
+                        <Field name="cpf" class="form-control" placeholder="CPF" />
 
                         <ErrorMessage component="span" name="cpf" class="form-error"/>
                     </div>
 
                     <div class="mb-3">
-                        <Field name="email" className="form-control" type="email" placeholder="Email" value={user.user_Email || ''}/>
+                        <Field name="email" className="form-control" type="email" placeholder="Email"/>
 
                         <ErrorMessage component="span" name="email" class="form-error"/>
                     </div>

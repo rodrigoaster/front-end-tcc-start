@@ -1,5 +1,8 @@
-.height-default {
-    height: 700px;
+.extra-mg-b {
+    margin-bottom: 200px;
+}
+.extra-mg-t {
+    margin-top: 100px;
 }
 
 .extra-maxWidth {

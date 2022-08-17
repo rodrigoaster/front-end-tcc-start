@@ -2,10 +2,7 @@
     width: 100%;
     height: auto;
     padding: 220px 0px;
-    background-image: url('src/assets/img/login/hidreletrica.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(to top, #000, #fff);
 }
 
 form{
@@ -18,6 +15,11 @@ form{
 
 .text-deco-none {
     text-decoration: none;
+}
+
+.img-logo {
+    margin-bottom: 120px;
+    margin-right: 190px;
 }
 
 
