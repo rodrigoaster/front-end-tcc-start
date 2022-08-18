@@ -63,7 +63,7 @@ export const CalculadoraConsumo = () => {
                 Authorization: `Bearer ${JSON.parse(token)}`
             }
         }).then((res) => {
-            history.push('/calculo')
+            history.push('/calculo');
             toast.success(res.data.message)
             return
         }).catch((err) => {

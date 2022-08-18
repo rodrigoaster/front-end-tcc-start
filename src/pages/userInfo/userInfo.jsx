@@ -48,14 +48,17 @@ export const Perfil = () => {
   
 
   const handleChangeValues = async (values) => {
-    await api.patch(`/user/edit/${user.user_Id}`, 
+    const valuesUser = {
+      user_Name: values.name,
+      user_CPF: values.cpf,
+      user_Email: values.email,
+    }
+
+    await api.patch(`/user/edit/${user.user_Id}`, valuesUser, 
         {
             headers: {
-              authorization: `${JSON.parse(token)}`
-            },
-            user_Name: values.name,
-            user_CPF: values.cpf,
-            user_Email: values.email,
+              authorization: `Bearer ${JSON.parse(token)}`
+            }
         }).then((res) => {
             toast.success(res.data.message)
             return

@@ -67,7 +67,7 @@ export const Login = () => {
                       className="form-error"
                     />
                   </div>
-                  <div className="d-flex justify-content-center"><button type="submit" className="btn btn-success">Entrar</button></div>
+                  <div className="d-flex justify-content-center"><button type="submit" className="btn btn-success ">Entrar</button></div>
                 </Form>
               </Formik>
             <div className="btn-area d-flex justify-content-center mt-5">
