@@ -41,7 +41,7 @@ export const Cadastro = () => {
             <Header/>
             <main class="bg-def pt-5 pb-5">
                 <div class="extra-pt d-flex justify-content-around">
-                        <div class='container shadow p-3 mb-5 bg-body rounded p-5 w-25 rounded mb-5'>
+                        <div class='container shadow p-3 mb-5 bg-body rounded p-5 w-45 rounded mb-5 width-wrap'>
                         <h1 class="text-center">Cadastro</h1>
                             <Formik 
                             initialValues={{}}

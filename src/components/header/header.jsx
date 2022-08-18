@@ -8,20 +8,9 @@ import './header.css';
 export const Header = () => {
 
     const { authenticated, logoutUser } = useContext(Context);
-    const [ user, setUser ] = useState({})
-    const [ token ] = useState(localStorage.getItem('token') || '')
 
-    useEffect(() => {
-        api.get('/user', {
-        headers: {
-            Authorization: `Bearer ${JSON.parse(token)}`
-        }
-        }).then((res)=> {
-        setUser(res.data)
-        });
-
-    }, [token])
-
+    
+   
     return (
         <nav className="navbar px-5 bg-light navbar-expand-lg">
             <div className="container-fluid">
@@ -53,7 +42,7 @@ export const Header = () => {
                                     <Link className="nav-link hoverNavItem" to='/calculo'>Cálculo</Link>
                                 </li>
                                 <li className="nav-item hoverNav">
-                                    <Link className="nav-link hoverNavItem" to='/user'>Olá, {user.user_Name}</Link>
+                                    <Link className="nav-link hoverNavItem" to='/user'>Olá, Rodrigo!</Link>
                                 </li>
                                 <li className="nav-item hoverNav">
                                     <Link onClick={logoutUser} className="nav-link hoverNavItem" to='/'>Sair</Link>

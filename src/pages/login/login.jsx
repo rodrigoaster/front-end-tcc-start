@@ -31,7 +31,7 @@ export const Login = () => {
     <div>
         <Header/>
         <div className="bg-def d-flex justify-content-around extra-pt">
-          <div class='container bg-light p-5 w-25 rounded mb-5 shadow p-3 mb-5 bg-body rounded'>
+          <div class='container bg-light p-5 w-25 rounded mb-5 shadow p-3 mb-5 bg-body rounded width-wrap'>
             <h1 className="text-center">LOGIN</h1>
               <Formik 
               initialValues={{}}

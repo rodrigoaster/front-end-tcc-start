@@ -1,11 +1,3 @@
-.background-c-2{
-    width: 100%;
-    height: auto;
-    background-color: aquamarine;
-}
-
-
-
 #user-foto{
     width: 120px;
     border-radius: 50%;
@@ -16,7 +8,7 @@
 
 .bg-def{
     width: 100%;
-    background-image: url('src/assets/img/cadastro/hidreletrica.jpg');
+    background-image: linear-gradient(to top, #0099ff, blue);
     background-size: cover;
 }
 

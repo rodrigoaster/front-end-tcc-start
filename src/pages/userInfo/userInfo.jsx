@@ -27,6 +27,7 @@ export const Perfil = () => {
   const [ token ] = useState(localStorage.getItem('token') || '')
   const [ update, setUpdate ] = useState(false);
 
+
   useEffect(() => {
     api.get('/user', {
       headers: {
@@ -38,19 +39,23 @@ export const Perfil = () => {
 
   }, [token])
 
+
+
   const handleChangeArea = () => {
     setUpdate(true)
   }
 
+  
+
   const handleChangeValues = async (values) => {
-    await api.patch(`/user/edit/${values.user_Id}`, 
+    await api.patch(`/user/edit/${user.user_Id}`, 
         {
+            headers: {
+              authorization: `${JSON.parse(token)}`
+            },
             user_Name: values.name,
             user_CPF: values.cpf,
             user_Email: values.email,
-            headers: {
-              Authorization: `${JSON.parse(token)}`
-            }
         }).then((res) => {
             toast.success(res.data.message)
             return
@@ -65,9 +70,12 @@ export const Perfil = () => {
   return (
     <div>
         <Header/>
-          <section className="bg">
+          <section className="bg-def">
           <div class='container bg-light p-5 w-50 rounded mb-5'>
             <h1 class="text-center">Meu Perfil</h1>
+            <div class="d-flex justify-content-center m-5">
+              <img className='foto' width="150" height="150" alt="imagem_rodrigo" src="src/assets/img/infoEquipe/rodrigo.jpeg"/><br/>
+            </div>
             <div class="d-flex justify-content-center m-5">
               <input type="file" />
             </div>
@@ -100,7 +108,7 @@ export const Perfil = () => {
                   </Formik>
               </>) : 
               (<>
-                  <div class="text-center">
+                  <div class="text-center d-flex justify-content-around">
                     <div>
                       <h3>Nome:</h3>
                       <p>{user.user_Name}</p>

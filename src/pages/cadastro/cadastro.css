@@ -1,6 +1,7 @@
 .bg-def{
     width: 100%;
     padding: 220px 0px;
+    background-image: linear-gradient(to right, yellow, #fff) !important;
 }
 
 #card-form{
@@ -23,4 +24,18 @@ a {
 .img-logo {
     margin-bottom: 120px;
     margin-right: 190px;
+}
+
+.w-45 {
+    width: 35%;
+}
+
+@media screen and (max-width: 1080px) {
+    .img-logo {
+        display: none;
+    }
+
+    .width-wrap {
+        width: 80% !important;
+    }
 }

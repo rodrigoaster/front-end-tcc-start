@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     padding: 220px 0px;
-    background-image: linear-gradient(to top, #000, #fff);
+    background-image: linear-gradient(to right, yellow, #fff) !important;
 }
 
 form{
@@ -22,6 +22,18 @@ form{
     margin-right: 190px;
 }
 
+
+
+
+@media screen and (max-width: 1080px) {
+    .img-logo {
+        display: none;
+    }
+
+    .width-wrap {
+        width: 80% !important;
+    }
+}
 
 @media screen and (max-width: 605px) {
     .btn-area {
