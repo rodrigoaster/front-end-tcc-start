@@ -21,7 +21,7 @@ export const Informacoes = () => {
                         <p class="card-text">Conheça mais sobre a sigla que mede o consumo dos seus eletrodomésticos!</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-outline-warning">Descubra agora!</button>
+                                <a href="https://www.portalsolar.com.br/kw-e-kwh-qual-e-a-diferenca" target="_blank" class="btn btn-outline-warning">Descubra agora!</a>
                             </div>
                         </div>
                         </div>
